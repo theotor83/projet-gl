@@ -1,0 +1,21 @@
+- L'utilisateur clique sur "Ajouter...".
+- Le système propose un choix entre Boite et Lien.
+Si choix d'ajouter une boite :
+    - Le système demande un nom, description et icone.
+    - L'utilisateur remplit les champs et valide.
+    - Le système affiche des types de données pouvant être lues par des capteurs (température, pression, RPM...) et demande à l'utilisateur de choisir les types de données pertinentes.
+    - L'utilisateur coche ce qui est pertinent pour ce sous-système.
+    - Pour chaque sous-système coché, le système offre la possibilité à l'utilisateur de définir une règle de action-réaction, ou bien un capteur.
+    Si l'utilisateur choisit de rajouter une règle : 
+        - L'utilisateur a le choix de définir n règles d'action-réaction sur chaque sous-système (par exemple, pour chaque 1000 RPM, la température augmente de 20 degrés et l'essence baisse * 2 plus vite).
+        - L'utilisateur valide la nouvelle règle. // Voir A?
+        - Le système sauvegarde la nouvelle règle dans le système et retourne sur l'écran d'édition de boite.
+    Si l'utilisateur choisit de rajouter un capteur :
+        - Le système rajoute un capteur sur ce sous-système et sauvegarde le choix.
+Si choix d'ajouter un lien :
+    - Le système demande à l'utilisateur de choisir un sous-système à gauche, puis n sous-systèmes à droite.
+    - L'utilisateur remplit les champs et valide.
+    - Le système vérifie la cohérence des liens.
+    - Le système demande à l'utilisateur quel type de données seraient partagés entre les sous-systèmes.
+    - L'utilisateur choisit les types de données qui seraient partagés (température, vibrations...) et valide.
+    - Le système sauvegarde les modifications.
